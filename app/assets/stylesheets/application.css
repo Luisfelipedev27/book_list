@@ -1,0 +1,355 @@
+/* --------------- Style Login ----------- Signup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-email {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 200px;
+}
+
+.wrap-email {
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    overflow: hidden;
+    padding: 77px 55px 33px 55px;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+    animation: moveBanner 3s;
+}
+
+.wrap-email-login {
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 77px 55px 33px 55px;
+    box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2);
+    animation: moveBanner 3s;
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.email-form {
+    width: 100%;
+}
+
+@keyframes moveBanner {
+    0%{
+        transform: translateY(30rem) rotateY(-20deg);
+    }
+    100%{
+        transform: translateY(0) rotateY(0);
+    }
+}
+
+.email-form-title {
+    display: block;
+    font-size: 25px;
+    color: rgb(26, 27, 27);
+    line-height: 2;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    margin-bottom: 20px;
+    animation: moveBanner 3s;
+}
+
+.wrap-input {
+    width: 100%;
+    position: relative;
+    border-bottom: 2.8px solid #ffffff;
+    margin-bottom: 70px;
+    animation: moveBanner 4s;
+    
+}
+
+.campo {
+    font-size: 15px;
+    border-color: rgb(255, 255, 255);;
+    line-height: 1.2px;
+    border: #dad8d8;
+    display: block;
+    width:  100%;
+    height: 50px;
+    background-color: transparent;
+    padding: 5px;
+    animation: moveBanner 4s;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.campo:hover {
+    background-color: #fff9e0;
+    border: #000000b9 2px solid;
+}
+
+.container-email-form-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 13px;
+    animation: moveBanner 6s; 
+    padding-top: 40px;
+    
+}
+
+.email-form-btn {
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: -webkit-linear-gradient(to left, #21d4fd, #b721ff);
+    background: -o-linear-gradient(to left, #21d4fd, #b721ff);
+    background: -moz-linear-gradient(to left, #21d4fd, #b721ff);
+    background: linear-gradient(to left, #21d4fd, #b721ff); 
+    width: 390px;
+    height: 60px;
+    transition: 1s;
+}
+.email-form-btn:hover {
+    cursor: pointer;
+    background-position: 390px;
+}
+
+
+.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.txt1 {
+    font-size: 17px;
+    color: #adadad;
+    line-height: 1.5;
+    padding-right: 5px;
+    text-decoration: none;
+}
+.txt1-login {
+    font-size: 17px;
+    color: #000000;
+    line-height: 1.5;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+.txt2 {
+    font-size: 17px;
+    color: #6a7dfe;
+    line-height: 1.5;
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+
+label {
+    color: transparent;
+}
+
+/*Style Store index.html.erb */
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+.fundo {
+    width: 100vw;  
+    height: 100vh;
+    font-size: 62.5%;
+    color: white; 
+}
+.corpo{ 
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    }
+header{
+    width: 100%;
+    height: 9vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(20, 20, 20, 0));
+    }
+.menu-content{
+    text-transform: uppercase;
+    height: 100%; 
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+    color: white;
+    
+    }
+.logo{
+    font-size: 2.7rem;
+    letter-spacing: 0.4rem; 
+    font-family: sans-serif;
+    margin-left: 30px; 
+    }
+.menu-content .list-itens{
+    display: flex; 
+    list-style: none; 
+    gap: 20px;
+    }
+.menu-content .list-itens a{
+    text-decoration: none; 
+    color: white;
+    padding: 1.2rem; 
+    transition: 2ms ease-in;
+    position: relative;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+.menu-content .list-itens a:before { 
+  content: ' '; 
+  position: absolute; 
+  bottom: 0; /*A posição que começa*/
+  left: 0;
+  width: 0px; 
+  border-radius: 40px;
+  height: 3px; 
+  background-color:rgb(71, 221, 226);
+  transition: all 0.5s ease;
+    }
+.menu-content .list-itens a:hover:before {
+    width: 100%;
+    }
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 240px;  
+    }
+@keyframes moveBanner {
+    0%{
+        transform: translateY(30rem) rotateY(-20deg);
+    }
+    100%{
+        transform: translateY(0) rotateY(0);
+    }
+    }
+/* TEXTOS PRINCIPAIS */
+.primary-text{
+    width: 1550px;
+    font-size: 3.8rem;
+    margin-bottom: 4rem; 
+    text-align: center; 
+    font-family: monospace;
+    animation: moveBanner 2.5s;
+    color: white;
+    }
+.second-text{
+    margin-bottom: 5rem; 
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    animation: moveBanner 3.1s;
+    }
+   
+    /*livros */
+
+.lista-usuario {
+    margin-left: 40px;
+    width: 100%;
+    height: 100px;
+    font-size: 18px;
+    padding-top: 50px;
+    animation: moveBanner 3.1s;
+}
+
+.lista-usuario li {
+    padding-top: 30px;
+}
+
+.search-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,
+    -50%);
+    background: #2c3441;
+    height: 50px;
+    border-radius: 40px;
+    padding: 10px;
+    animation: moveBanner 3.1s;
+}
+
+.search-box:hover > input {
+    width: 200px;
+    padding: 0 10px;
+}
+
+.my-input {
+    width: 0;
+    border: none;
+    outline: none;
+    padding: 0;
+    background: none;
+    font-size: 2rem;
+    transition: 0.5s ease;
+    line-height: 4px;
+    color: #fff;
+}
+
+.btn-pesquisar {
+    height: 30px;
+    border-radius: 20px;
+    width: 100px;
+    line-height: 0px;
+    background: #00000025 ;
+    color: #fff;
+    animation: moveBanner 3.1s;
+    
+}
+
+.buttom-add {
+    height: 40px;
+    width: 170px;
+    border-radius: 11px;
+    background-color: #1197cc;
+    box-shadow: #094c66 4px 4px 0px;
+    transition: transform 200ms, box-shadow 200ms;
+    color: #fff;
+    
+}
+
+.buttom-add:hover {
+    background-color: #1cbbdf;
+    transition: 0.8s;
+}
+
+
+button:active {
+    transform: translateY(4px) translateX(4px);
+    box-shadow: #094c66 0px 0px 0px;
+}
+

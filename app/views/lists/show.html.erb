@@ -1,0 +1,11 @@
+<% if notice %>
+
+<aside id="notice"><%=notice %> </aside>
+<% end %>
+
+<h2> Minha Lista </h2>
+<ul> 
+  <% @list.local_items.each do |item| %>
+    <li> <%= item.livro.titulo %> </li> 
+    <% end %> 
+    </ul>

@@ -1,0 +1,62 @@
+<%if notice %>
+    <aside id="notice"><%= notice %> </aside>
+<% end %>  
+
+<html class="fundo" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+<body class="corpo">
+    <header> 
+        <div class="menu-content"> 
+            <h1 class="logo">BookList</h1> 
+            <nav class="header-menu"></nav> 
+            <ul class="list-itens"> 
+                <li><a href="#">Sobre nós</a></li> 
+                <li><%= link_to 'Cadastre-se', '/signup' %></li>
+                <li><%= link_to 'Entre', '/login' %></li>
+            </ul>
+        </div>
+
+    </header>
+    <main> 
+        <div class="main-content">
+            <h1 class="primary-text"> Cadastre-se e faça login para fazer sua propria lista </h1>
+            <h2 class="second-text"> Veja abaixo os livros adicionados pelos nossos usuários </h2>
+        </div>
+                
+            <ul class="lista-usuario"> 
+                        <% cache @livros do %> 
+                        <%#Em vez do SQL, o rails que executará %>
+                       <% @livros.each do |livro| %>
+                        <% cache livro do %>
+                    <li>       
+                        <h2><strong> <%=livro.titulo%> </strong> </h2>
+                <p> <strong> <%= sanitize(livro.autor)%> </strong> </p>       
+                    <div class="ano">
+                        <p> <strong> <%=livro.ano%> </strong> </p>
+                            </div>  
+                        </li>
+                            <% end %>
+                        <% end %>
+                    <% end %>
+                </ul>
+               
+            </main>    
+        </body>
+</html>
+
+<style>
+html {
+    background: url(<%= asset_path 'fundo-book.png' %>);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    
+}
+
+</style>
+
