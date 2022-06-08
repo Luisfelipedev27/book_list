@@ -2,9 +2,9 @@ Rails.application.routes.draw do
   get 'session/new'
   get 'session/create'
   get 'home' => 'store#index' 
+  root 'store#index', as: 'store_index'
   resources :users
   resources :local_items
-  root 'store#index', as: 'store_index'
   resources :lists
   resources :livros
   get "signup", to: "users#new"

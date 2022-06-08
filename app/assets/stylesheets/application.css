@@ -226,6 +226,7 @@ header{
     position: relative;
     font-family: 'Manrope', sans-serif;
     font-size: 2rem;
+    display: flex;
     }
 .menu-content .list-itens a:before { 
   content: ' '; 
@@ -266,6 +267,8 @@ header{
     font-family: monospace;
     animation: moveBanner 2.5s;
     color: white;
+    padding-top: 100px; 
+    
     }
 .second-text{
     margin-bottom: 5rem; 

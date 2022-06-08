@@ -1,3 +1,4 @@
+####### meu codigo
 class Livro < ApplicationRecord
     paginates_per 5
     validates :titulo, :autor, :ano, presence: true

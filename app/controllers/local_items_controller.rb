@@ -22,6 +22,8 @@ class LocalItemsController < ApplicationController
   end
 
   # POST /local_items or /local_items.json
+  
+  ####### meu codigo
   def create
     livro = Livro.find(params[:livro_id]) #organizado
     @local_item = @list.local_items.build(livro: livro) #organizado!

@@ -4,7 +4,6 @@ class CreateLivros < ActiveRecord::Migration[7.0]
       t.string :titulo
       t.string :autor
       t.integer :ano
-
       t.timestamps
     end
   end

@@ -5,6 +5,7 @@ import "controllers"
 //= require jquery_ujs
 //= require_tree 
 
+/////// meu codigo // esse não funcionou :(    
 function getbooks(){
     document.getElementById('output').innerHTML="";
     fetch("http://openlibrary.org/search.json?q="+document.getElementById("input").value).then(a => a.json()).then(response =>{
