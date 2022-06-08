@@ -29,6 +29,7 @@ gem "jbuilder"
 
 gem 'jsbundling-rails', '~> 1.0', '>= 1.0.2'
 
+gem 'kaminari'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -43,6 +44,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
+gem 'jquery-rails', '~> 4.4'
 
 # Use Sass to process CSS
 # gem "sassc-rails"

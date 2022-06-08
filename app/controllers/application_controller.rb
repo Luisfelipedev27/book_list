@@ -3,8 +3,9 @@ class ApplicationController < ActionController::Base
 def current_user
   @current_user ||= User.find(session[:user_id]) if session[:user_id]
 end
+
 def show 
-  @livros = Livro.order(:titulo)
+  @livros = Livro.order(:titulo).page params[:page]
 end
 
 def logged_in?
@@ -16,7 +17,5 @@ def require_user
     flash[:alert] = "You must be logged in to perform that action."
     redirect_to login_path
   end
-
-
 end
 end

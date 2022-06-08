@@ -1,6 +1,5 @@
 import { Application } from "@hotwired/stimulus"
-import React from "react"
-import ReactDOM from "react-dom"
+
 
 const application = Application.start()
 

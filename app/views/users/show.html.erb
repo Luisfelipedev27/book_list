@@ -42,17 +42,16 @@
                     <h2><strong> <%=livro.titulo%> </strong></h2>
                      <p>  <strong> <%= sanitize(livro.autor)%> </strong> </p>       
                       <div class="ano">
-                        <p> <strong> <%=livro.ano%> </strong></p>
+                    <p> <strong> <%=livro.ano%> </strong></p>
                     <%= button_to 'Adicionar na lista ', local_items_path(livro_id: livro), class: 'buttom-add' %>
-                        </div>  
-                    </li>
-                    <% end %>
+             </div>  
+            </li>
+                 <% end %>
                 <% end %>
             <% end %>
-                      </ul>
-        
-                    
+        </ul>          
     </main>    
+<%= paginate @livros %>
 </body>
 </html>
 

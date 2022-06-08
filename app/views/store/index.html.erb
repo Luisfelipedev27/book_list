@@ -20,33 +20,32 @@
                 <li><%= link_to 'Entre', '/login' %></li>
             </ul>
         </div>
-
     </header>
     <main> 
         <div class="main-content">
             <h1 class="primary-text"> Cadastre-se e faça login para fazer sua propria lista </h1>
             <h2 class="second-text"> Veja abaixo os livros adicionados pelos nossos usuários </h2>
-        </div>
-                
+        </div>    
             <ul class="lista-usuario"> 
-                        <% cache @livros do %> 
-                        <%#Em vez do SQL, o rails que executará %>
-                       <% @livros.each do |livro| %>
-                        <% cache livro do %>
-                    <li>       
-                        <h2><strong> <%=livro.titulo%> </strong> </h2>
-                <p> <strong> <%= sanitize(livro.autor)%> </strong> </p>       
+                <% cache @livros do %> 
+                <%#Em vez do SQL, o rails que executará %>
+                <% @livros.each do |livro| %>
+                <% cache livro do %>
+            <li>       
+                <h2><strong> <%=livro.titulo%> </strong> </h2>
+                    <p> <strong> <%= sanitize(livro.autor)%> </strong> </p>       
                     <div class="ano">
                         <p> <strong> <%=livro.ano%> </strong> </p>
-                            </div>  
-                        </li>
-                            <% end %>
+        </div>  
+            </li>
                         <% end %>
                     <% end %>
-                </ul>
-               
-            </main>    
-        </body>
+                <% end %>
+            </ul>     
+    </main>    
+                    
+    <%= paginate @livros %>
+</body>
 </html>
 
 <style>
@@ -57,6 +56,5 @@ html {
     background-position-y: 0px;
     
 }
-
 </style>
 

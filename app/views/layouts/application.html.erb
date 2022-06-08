@@ -8,8 +8,9 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap">
-  </head>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Manrope&display=swap">
   
+  </head>
   <body>
 
   <% if flash[:alert] %>
@@ -18,7 +19,6 @@
     </div>
   <% end %>
     <%= yield %>
-
-    
+ 
   </body>
 </html>

@@ -1,5 +1,4 @@
 module CurrentList 
-
     private 
 
       def set_list 
