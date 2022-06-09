@@ -2,10 +2,38 @@
 
 <aside id="notice"><%=notice %> </aside>
 <% end %>
+<header> 
+        <div class="menu-content"> 
+            <h1 class="logo">BookList</h1> 
+            <nav class="header-menu"></nav> 
+            <ul class="list-itens"> 
+                <li><a href="#">Sobre nós</a></li> 
+                
+                <li><%= link_to 'sair', '/login', class:"txt2" %></li>
+            </ul>
+        </div>
+    </header>
+    
+<h2 class="minha-lista> Minha Lista </h2>
 
-<h2> Minha Lista </h2>
-<ul> 
+<div class="lista-titulo">
+<ul class="lista-usuario"> 
   <% @list.local_items.each do |item| %>
     <li> <%= item.livro.titulo %> </li> 
+    <%= button_to "Apagar livro da lista", @livro, method: :delete, class: 'buttom-add' %>
+
     <% end %> 
     </ul>
+</div>
+
+    <style>
+    html  {
+        background: url(<%= asset_path 'fundo-book.png' %>);
+        background-position: center center;
+        background-size: cover;
+        background-position-y: 0px; 
+ 
+  
+          }
+
+   

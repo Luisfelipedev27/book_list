@@ -30,7 +30,7 @@ class LocalItemsController < ApplicationController
 
     respond_to do |format|
       if @local_item.save
-        format.html { redirect_to @local_item.list, notice: "Line item was successfully created." }
+        format.html { redirect_to @local_item.list, notice: "Lista criada com sucesso" }
         format.json { render :show, status: :created, location: @local_item }
       else
         format.html { render :new }

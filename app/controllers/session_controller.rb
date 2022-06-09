@@ -9,7 +9,7 @@ class SessionController < ApplicationController
       flash[:alert] = "Logado com sucesso"
       redirect_to user
     else
-      flash[:alert] = "login ou senha incorretas"
+      flash[:alert] = "Login ou senha incorretas"
       redirect_to login_path
       
     end
