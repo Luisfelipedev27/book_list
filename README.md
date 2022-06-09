@@ -2,7 +2,7 @@
 #rails 7.0.3
 #Sqlite3
 
--Rodar o projeto com docker com o comando docker-compose up .
+-Rodar o projeto com docker com o comando docker-compose up .(Usar o sudo antes, se necessário)
 
 -Fiz o commit inicial, mas apaguei para refazer o projeto com outros parâmetros. Acabei não fazendo o commit inicial novamente.
 -identifiquei em comentário as partes que são meu código.
