@@ -302,7 +302,7 @@ header{
 
 .search-box {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%,
     -50%);
@@ -316,6 +316,7 @@ header{
 .search-box:hover > input {
     width: 200px;
     padding: 0 10px;
+    
 }
 
 .my-input {
@@ -358,7 +359,6 @@ header{
     background-color: #1cbbdf;
     transition: 0.8s;
 }
-
 
 button:active {
     transform: translateY(4px) translateX(4px);
