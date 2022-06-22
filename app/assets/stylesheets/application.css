@@ -248,7 +248,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 240px;  
+    padding-top: 200px;  
     }
 @keyframes moveBanner {
     0%{
@@ -267,7 +267,7 @@ header{
     font-family: monospace;
     animation: moveBanner 2.5s;
     color: white;
-    padding-top: 100px; 
+    padding-top: 75px; 
     
     }
 .second-text{
@@ -276,7 +276,7 @@ header{
     color: rgb(255, 255, 255);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
-    animation: moveBanner 3.1s;
+    animation: moveBanner 2.1s;
     }
    
     /*livros */
@@ -285,8 +285,7 @@ header{
     margin-left: 40px;
     width: 100%;
     font-size: 20px;
-    padding-top: 50px;
-    animation: moveBanner 3.1s;
+    padding-top: 100px;
 }
 
 .lista-usuario li:hover {
@@ -302,7 +301,7 @@ header{
 
 .search-box {
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%,
     -50%);
@@ -311,12 +310,12 @@ header{
     border-radius: 40px;
     padding: 10px;
     animation: moveBanner 3.1s;
+    
 }
 
 .search-box:hover > input {
     width: 200px;
     padding: 0 10px;
-    
 }
 
 .my-input {
@@ -333,7 +332,7 @@ header{
 
 .btn-pesquisar {
     height: 30px;
-    border-radius: 20px;
+    border-radius: 15px;
     width: 100px;
     line-height: 0px;
     background: #00000025 ;
